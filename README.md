@@ -26,7 +26,8 @@ xml文件的样式和颜色大多数复用了，所以会有使用的样式的�
 * [Gilde](https://muyangmin.github.io/glide-docs-cn/) <br>
 * [QMUI](https://qmuiteam.com/android/get-started/) <br>
 * [butterknife](https://github.com/JakeWharton/butterknife) <br>
-* [sweet-alert-dialog](https://github.com/pedant/sweet-alert-dialog) <br>
+* [sweet-alert-dialog](https://github.com/pedant/sweet-alert-dialog)（由于原项目已经没有维护，使用会出错，所以使用第三方封装） <br>
+* [sweet-alert-dialog第三方封装](https://github.com/Cazaea/SweetAlertDialog) <br>
 * [tastytoast](https://github.com/yadav-rahul/TastyToast) <br>
 * [ColorDialog](https://github.com/andyxialm/ColorDialog) <br>
 * [takephoto](https://github.com/crazycodeboy/TakePhoto) <br>
