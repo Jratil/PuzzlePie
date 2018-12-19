@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/parent_relative_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/game_text_time">
+
+	<TextView
+			android:id="@+id/select_pic_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="10dp"
+			android:textSize="20sp"
+			android:textColor="@color/color_game_time"
+			android:text="@string/please_select_pic"/>
+
+	<View
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:layout_marginStart="10dp"
+			android:layout_marginTop="10dp"
+			android:layout_marginEnd="10dp"
+			android:layout_below="@id/select_pic_title"
+			android:background="@color/color_time_border"/>
+
+	<ScrollView
+			android:id="@+id/select_pic_scroll"
+			android:layout_marginTop="10dp"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/select_pic_title"
+			android:layout_above="@id/button_not_change">
+
+		<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+
+			<top.ratil.puzzlepie.view.CustomView
+					android:id="@+id/dialog_pic_view"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"/>
+
+			<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="10dp"
+					android:layout_marginEnd="10dp"
+					android:orientation="horizontal">
+
+				<View
+						android:layout_width="0dp"
+						android:layout_height="1px"
+						android:layout_weight="1"
+						android:layout_marginEnd="5dp"
+						android:layout_gravity="center"
+						android:background="@color/color_time_border"/>
+
+				<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center"
+						android:layout_gravity="center"
+						android:text="@string/recent_ten_pic"
+						android:textColor="@color/color_game_time"/>
+
+				<View
+						android:layout_width="0dp"
+						android:layout_height="1px"
+						android:layout_weight="1"
+						android:layout_marginStart="5dp"
+						android:layout_gravity="center"
+						android:background="@color/color_time_border"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_margin="10dp"
+					android:orientation="horizontal">
+
+				<View
+						android:layout_width="0dp"
+						android:layout_height="1px"
+						android:layout_weight="1"
+						android:layout_marginEnd="5dp"
+						android:layout_gravity="center"
+						android:background="@color/color_time_border"/>
+
+				<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center"
+						android:layout_gravity="center"
+						android:text="@string/default_pic"
+						android:textColor="@color/color_game_time"/>
+
+				<View
+						android:layout_width="0dp"
+						android:layout_height="1px"
+						android:layout_weight="1"
+						android:layout_marginStart="5dp"
+						android:layout_gravity="center"
+						android:background="@color/color_time_border"/>
+
+			</LinearLayout>
+
+			<top.ratil.puzzlepie.view.CustomView
+					android:id="@+id/default_pic_view"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"/>
+
+			<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_margin="10dp"
+					android:orientation="horizontal">
+
+
+				<View
+						android:layout_width="0dp"
+						android:layout_height="1px"
+						android:layout_weight="1"
+						android:layout_marginEnd="5dp"
+						android:layout_gravity="center"
+						android:background="@color/color_time_border"/>
+
+				<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center"
+						android:layout_gravity="center"
+						android:text="@string/no_more_pic"
+						android:textColor="@color/color_game_time"/>
+
+				<View
+						android:layout_width="0dp"
+						android:layout_height="1px"
+						android:layout_weight="1"
+						android:layout_marginStart="5dp"
+						android:layout_gravity="center"
+						android:background="@color/color_time_border"/>
+
+			</LinearLayout>
+		</LinearLayout>
+
+	</ScrollView>
+
+	<Button
+			android:id="@+id/button_not_change"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:layout_margin="10dp"
+			android:text="@string/change_pic"
+			android:textStyle="bold"
+			android:textColor="@drawable/dialog_button_not_change_text"
+			android:background="@drawable/dialog_button_not_change_select"/>
+
+
+</RelativeLayout>

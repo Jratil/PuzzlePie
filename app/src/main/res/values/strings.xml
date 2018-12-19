@@ -1,0 +1,24 @@
+<resources>
+	<string name="app_name">拼图酱</string>
+	<string name="default_time">0 s</string>
+	<string name="level_game">难度</string>
+	<string name="reset_game">重置</string>
+	<string name="select_pic">更换图片</string>
+	<string name="history_pic">历史图片</string>
+	<string name="use_time">%1$s s</string>
+	<string name="please_select_pic">选择一张图片</string>
+	<string name="change_pic">不换了</string>
+	<string name="recent_ten_pic">只显示最近的十张图片</string>
+	<string name="default_pic">下面是默认的图片哦</string>
+	<string name="no_more_pic">没有更多的图片了哦</string>
+	<string name="highest_record">最高记录</string>
+	<string name="game_help">游戏帮助</string>
+	<string name="exit_game">退出游戏</string>
+	<string name="start_game">开始游戏</string>
+	<string name="level_simple">简单</string>
+	<string name="level_medium">一般</string>
+	<string name="level_difficult">困难</string>
+	<string name="record_title">Record</string>
+	<string name="highest_ten_record">只显示最高十条记录</string>
+	<string name="game_title">拼图酱</string>
+</resources>

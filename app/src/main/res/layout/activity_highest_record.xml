@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+		android:background="#d4f2f2f2">
+
+	<ImageView
+			android:layout_width="match_parent"
+			android:layout_height="230dp"
+			android:src="@drawable/bg_record_pic"
+			android:scaleType="centerCrop"/>
+
+	<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="120dp">
+
+		<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:layout_marginStart="20dp"
+				android:layout_marginTop="10dp"
+				android:textSize="25sp"
+				android:text="@string/record_title"/>
+
+	</LinearLayout>
+
+	<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical"
+			android:layout_marginTop="120dp"
+			android:layout_marginBottom="20dp"
+			android:layout_marginStart="20dp"
+			android:layout_marginEnd="20dp"
+			android:background="#43ff81af">
+
+		<LinearLayout
+				android:id="@+id/record_level_name"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10dp">
+
+			<TextView
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:gravity="center"
+					android:text="@string/level_simple"
+					android:textSize="20sp"/>
+
+			<TextView
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:gravity="center"
+					android:text="@string/level_medium"
+					android:textSize="20sp"/>
+
+			<TextView
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:gravity="center"
+					android:text="@string/level_difficult"
+					android:textSize="20sp"/>
+
+		</LinearLayout>
+
+		<View
+				android:id="@+id/line_one"
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:layout_below="@id/record_level_name"
+				android:layout_marginTop="10dp"
+				android:layout_marginStart="10dp"
+				android:layout_marginEnd="10dp"
+				android:background="#000000"/>
+
+		<LinearLayout
+				android:id="@+id/record_faction"
+				android:layout_below="@+id/line_one"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+			<LinearLayout
+					android:id="@+id/simple_record"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:gravity="center"
+					android:orientation="vertical">
+			</LinearLayout>
+
+			<LinearLayout
+					android:id="@+id/medium_record"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:gravity="center"
+					android:orientation="vertical"/>
+
+			<LinearLayout
+					android:id="@+id/difficult_record"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:gravity="center"
+					android:orientation="vertical"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_alignParentBottom="true"
+				android:layout_margin="10dp"
+				android:orientation="horizontal">
+
+			<View
+					android:layout_width="0dp"
+					android:layout_height="1px"
+					android:layout_weight="1"
+					android:layout_marginEnd="5dp"
+					android:layout_gravity="center"
+					android:background="@color/color_time_border"/>
+
+			<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:layout_gravity="center"
+					android:text="@string/highest_ten_record"
+					android:textColor="@color/color_game_time"/>
+
+			<View
+					android:layout_width="0dp"
+					android:layout_height="1px"
+					android:layout_weight="1"
+					android:layout_marginStart="5dp"
+					android:layout_gravity="center"
+					android:background="@color/color_time_border"/>
+
+		</LinearLayout>
+
+	</RelativeLayout>
+
+</RelativeLayout>

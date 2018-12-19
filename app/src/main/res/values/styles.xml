@@ -1,0 +1,25 @@
+<resources>
+
+	<!-- Base application theme. -->
+	<style name="AppTheme" parent="QMUI.Compat.NoActionBar">
+		<!-- Customize your theme here. -->
+		<item name="colorPrimary">@color/colorPrimary</item>
+		<item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+		<item name="colorAccent">@color/colorAccent</item>
+		<item name="android:fitsSystemWindows">true</item>
+		<!--禁止多点触控-->
+		<item name="android:windowEnableSplitTouch">false</item>
+		<item name="android:splitMotionEvents">false</item>
+	</style>
+
+	<style name="RecordTheme" parent="QMUI.Compat.NoActionBar">
+		<item name="colorPrimary">@color/colorPrimary</item>
+		<item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+		<item name="colorAccent">@color/colorAccent</item>
+	</style>
+
+	<style name="DialogAnimation" parent="android:Animation">
+		<item name="android:windowEnterAnimation">@anim/modal_in</item>
+		<item name="android:windowExitAnimation">@anim/scale_exit</item>
+	</style>
+</resources>

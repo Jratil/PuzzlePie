@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="colorPrimary">#3F51B5</color>
+	<color name="colorPrimaryDark">#303F9F</color>
+	<color name="colorAccent">#FF4081</color>
+	<color name="color_reset_game">#31b933</color>
+	<color name="color_select_level">#517eb9</color>
+	<color name="color_game_time">#b191f5</color>
+	<color name="color_select_pic">#d6de42</color>
+	<color name="color_history_pic">#a252cc</color>
+	<color name="color_time_border">#ffa7e3</color>
+</resources>

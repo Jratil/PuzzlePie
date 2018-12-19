@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@drawable/bg_game">
+
+
+	<ImageView
+			android:id="@+id/sound_pic"
+			android:layout_width="30dp"
+			android:layout_height="30dp"
+			android:layout_alignParentEnd="true"
+			android:layout_marginTop="30dp"
+			android:layout_marginEnd="20dp"
+			android:src="@drawable/icon_sound"/>
+
+	<TextView
+			android:id="@+id/game_title_pic"
+			android:layout_width="250dp"
+			android:layout_height="100dp"
+			android:layout_marginTop="100dp"
+			android:layout_centerHorizontal="true"
+			android:gravity="center"
+			android:text="@string/game_title"
+			android:textSize="60sp"
+			android:textColor="@color/color_time_border"/>
+
+	<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/game_title_pic"
+			android:layout_marginTop="50dp"
+			android:orientation="vertical">
+
+		<Button
+				android:id="@+id/start_game"
+				android:layout_height="wrap_content"
+				android:layout_width="100dp"
+				android:layout_marginTop="10dp"
+				android:layout_gravity="center"
+				android:background="@drawable/dialog_button_not_change_select"
+				android:textColor="@drawable/dialog_button_not_change_text"
+				android:text="@string/start_game"/>
+
+		<Button
+				android:id="@+id/highest_record"
+				android:layout_height="wrap_content"
+				android:layout_width="100dp"
+				android:layout_marginTop="10dp"
+				android:layout_gravity="center"
+				android:background="@drawable/game_button_reset_select"
+				android:textColor="@drawable/game_button_reset_text"
+				android:text="@string/highest_record"/>
+
+		<Button
+				android:id="@+id/game_help"
+				android:layout_height="wrap_content"
+				android:layout_width="100dp"
+				android:layout_marginTop="10dp"
+				android:layout_gravity="center"
+				android:background="@drawable/game_button_level_select"
+				android:textColor="@drawable/game_button_level_text"
+				android:text="@string/game_help"/>
+
+		<Button
+				android:id="@+id/exit_game"
+				android:layout_height="wrap_content"
+				android:layout_width="100dp"
+				android:layout_marginTop="10dp"
+				android:layout_gravity="center"
+				android:background="@drawable/dialog_button_not_change_select"
+				android:textColor="@drawable/dialog_button_not_change_text"
+				android:text="@string/exit_game"/>
+
+	</LinearLayout>
+</RelativeLayout>
